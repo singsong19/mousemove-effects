@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mousemove Effects</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section>
+        <h2>Merry<br><span>Christmas</span></h2>
+        <div class="merry"></div>
+        <img src="./img/christmas-con-logo.png" alt="">
+    </section>
+    <script>
+        const merry = document.querySelector('.merry');
+        window.onmousemove = function(e){
+            const x = e.clientX;
+            merry.style.left = x + 'px';
+        }
+    </script>
+</body>
+</html>
